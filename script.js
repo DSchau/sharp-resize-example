@@ -1,9 +1,9 @@
 const sharp = require('sharp')
 
 async function run() {
-  await sharp('input.svg')
+  await sharp('pug.jpg')
   .resize(128)
-  .toFile('output-without-width.png')
+  .toFile('pug-with-just-one-dimension.jpg')
 }
 
 run()
